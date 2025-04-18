@@ -10,7 +10,7 @@ CACHE_DIR=
 #add --do_train \ if training else no
 #add --do_validate \ if validating else no
 #add --do_predict \ if testing else no
-python -m models.transformers.main \
+python -m models.transformers.decision_focused_main \
     --max_epochs 5 \
     --max_seq_length ${INPUT_LENGTH} \
     --output_dir $OUTPUT_DIR \
